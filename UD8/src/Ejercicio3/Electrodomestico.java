@@ -47,4 +47,17 @@ public class Electrodomestico {
 		return colour;
 		
 	}
+
+	@Override
+	public String toString() {
+		return "Electrodomestico [color=" + color + ", energia=" + energia + ", precioBase=" + precioBase + ", peso="
+				+ peso + "]";
+	}
+
+	/**
+	 * @param color the color to set
+	 */
+	public void setColor(String color) {
+		this.color = elegirColor(color);
+	}
 }
