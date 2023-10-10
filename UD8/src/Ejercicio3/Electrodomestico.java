@@ -7,10 +7,10 @@ public class Electrodomestico {
 	protected double precioBase;
 	protected double peso;
 	
-	private final String COLOR = "BLANCO";
-	private final char ENERGIA = 'F';
-	private final double PRECIOBASE = 100;
-	private final double PESO = 5;
+	protected final String COLOR = "BLANCO";
+	protected final char ENERGIA = 'F';
+	protected final double PRECIOBASE = 100;
+	protected final double PESO = 5;
 
 	public Electrodomestico() {
 		this.precioBase = PRECIOBASE;
@@ -19,8 +19,32 @@ public class Electrodomestico {
 		this.peso = PESO;
 	}
 	
-	public static void main(String[] args) {
-		
+	public Electrodomestico(double p, double k) {
+		this.precioBase = p;
+		this.peso = k;
+		this.color = COLOR;
+		this.energia = ENERGIA;
+	}
+	
+	public Electrodomestico(char energy, double p, double k, String colour) {
+		this.color = elegirColor(colour);
+		this.peso = k;
+		this.precioBase = p;
+		this.energia = energy;
 	}
 
+	public String elegirColor(String colour) {
+			if (colour.equals (COLOR)) {
+				System.out.println("El color escogido es el blanco");
+				
+			} else if (colour.equalsIgnoreCase("negro")||colour.equalsIgnoreCase("rojo")||colour.equalsIgnoreCase("azul")||colour.equalsIgnoreCase("gris")) {;
+				System.out.println("El color escogido es: "+colour);
+
+			}else{
+				colour=COLOR;
+				System.out.println("Tu color por defecto es el blanco");
+			}
+		return colour;
+		
+	}
 }
