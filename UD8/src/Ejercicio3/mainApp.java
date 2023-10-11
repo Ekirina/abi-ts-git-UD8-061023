@@ -7,11 +7,11 @@ public class mainApp {
 		
 		electro1.setColor("rojo");
 		
-		System.out.println(electro1);
+		System.out.println("\n" +electro1+ "\n");
 		
 		electro1.setColor("amarillo");
 		
-		System.out.println(electro1);
+		System.out.println("\n"+electro1);
 
 	}
 }

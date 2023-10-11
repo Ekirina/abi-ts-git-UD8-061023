@@ -1,4 +1,4 @@
-package Ejercicio1;
+/*package Ejercicio1;
 
 public class Persona {
 	private String nombre;
@@ -16,4 +16,4 @@ public void hm() {
 			this.sexo = SEXODEFECTO;	
 			}
 
-}	
+}	*/
